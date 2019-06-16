@@ -1,0 +1,317 @@
+body{
+  background: rgba(0,0,0,0.9);
+  margin: 0;
+  color:#fff;
+  font-family: 'Philosopher', sans-serif;
+}
+h2{
+  color: #9E824D;
+  font-weight: 400;
+}
+h3{
+  font-size: 1.5rem;
+}
+h6{
+  font-size: 0.8rem;
+}
+i{
+  color: #9E824D;
+}
+a{
+  font-size: 1.5rem;
+  color: #333;
+  padding: 20px;
+  text-decoration: none;
+
+}
+a:hover{
+  color: white;
+}
+
+.container2{
+  background-color: black;
+  padding: 5px;
+  border-radius: 7px;
+}
+.english{
+  position: absolute;
+  right: 15px;
+  padding: 5px;
+
+}
+li{
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+
+
+/* pseudo element to install it to html  */
+.showcase::after{
+  content: "";
+  height: 110vh;
+  width: 100%;
+  background-image: url(https://image.ibb.co/gzOBup/showcase.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(10px);
+  ~webkit-filter:blur(10px);
+  transition: all 1000ms;
+}
+
+.showcase:hover:after{
+  filter: blur(0px);
+  ~webkit-filter:blur(0px);
+}
+
+.content{
+  position: absolute;
+  z-index: 1;
+  top: -1%;
+  left: 40%;
+  margin-top: 105px;
+  margin-left: -250px;
+  width: 700px;
+  height: 220px;
+  border-radius: 7px;
+  text-align: center;
+  background-color: black;
+}
+
+.showcase:hover .content{
+  filter: blur(0.5px);
+  ~webkit-filter:blur(0.5px);
+}
+.content .logo{
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  border: 5px solid #9E824D;
+}
+
+
+#title2{
+  font-size: 2rem;
+  font-style: italic;
+  position: relative;
+  left: 70px;
+}
+.content .text{
+  margin-top: 0px;
+}
+
+.mainTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.tab-content-item{
+  margin-left: 5%;
+}
+
+
+
+
+.container{
+  max-width: 960px;
+  margin:auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+
+.grid-3{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+}
+.grid-2{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px;
+}
+.center{
+  text-align: center;
+  margin: auto;
+  padding: 50px;;
+}
+.bg-light{
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark{
+  background: #333;
+  color: #f4f4f4;
+}
+footer{
+  padding: 2.2rem;
+}
+footer p{
+  margin: 0;
+}
+.copy{
+  text-align: center;
+}
+.fluid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+  text-align: center;
+}
+.contactar{
+  padding: 15px;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+.contactar:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.begin {
+  width: 100%;
+  height: 40px;
+  background-color: #9E824D;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+.main{
+  background-color: #333;
+  color: #9E824D;
+  margin-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+
+
+.tab-border {
+	color: white;
+}
+
+.show {
+	display: block !important;
+	opacity: 1 !important;
+	transition: all 1000 ease-in;
+}
+.unshow{
+  display: none;
+}
+.end{
+  padding: 10px;
+}
+
+/*hide content initially*/
+#tab-1-content{
+  display: none;
+}
+#tab-2-content{
+  display: none;
+}
+#tab-3-content{
+  display: none;
+}
+
+
+
+.container3{
+  display: flex;
+
+}
+
+
+.movility{
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom:100px;
+
+}
+#serveis{
+  padding-top: 15%;
+}
+/* Small Screens */
+/* @media (max-width:500px){
+  .showcase::after {
+    height: 90vh;
+  }
+  .content{
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 40%;
+    margin-top: 105px;
+    margin-left: -300px;
+    width: 800px;
+    height: 300px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: black;
+    font-size: 2.2rem;
+  }
+  #title2{
+    position: relative;
+    left: 40px;
+  }
+  .begin{
+    height: 60px;
+    position: fixed;
+    font-size: 1.5rem;
+    top: 0;
+    z-index: 3;
+  }
+  a{
+    font-size: 2.5rem;
+    padding: 15px;
+  }
+  .contactar{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 5px;
+  }
+  .fluid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .fluid:active{
+    color:white;
+
+  }
+
+
+
+
+  .content .logo {
+    height: 50px;
+    width: 50px;
+  }
+
+
+  .grid-3{
+    grid-template-columns: 1fr;
+  }
+  .about{
+    margin-top: 200px;
+  }
+
+  .services div {
+    border-bottom: #333 dashed 1px;
+    padding: 1.2rem 1rem;
+  }
+} */
